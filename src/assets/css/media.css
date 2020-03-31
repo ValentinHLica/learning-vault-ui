@@ -1,0 +1,44 @@
+@media (min-width: 590px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 250px;
+  }
+
+  .title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .wrapper {
+    padding: 10px;
+  }
+
+  .course-title {
+    font-size: 1.5em;
+  }
+
+  .section li {
+    font-size: 1em;
+  }
+
+  .cover img {
+    width: 250px;
+  }
+
+  #modal video {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 700px) {
+  #form {
+    width: 500px;
+    margin: auto;
+  }
+}

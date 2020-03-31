@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #fcfdff;
+  margin: 10px;
+}
+
+/* Container */
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Spiner */
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #292929d3;
+  border-color: #292929d3 transparent #292929d3 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#form {
+  display: flex;
+}
+
+#form input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #e7ecf6c5;
+  width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 1.2em;
+}
+
+::placeholder {
+  color: #292929d3;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #292929d3;
+}
+
+::-ms-input-placeholder {
+  color: #292929d3;
+}
+
+#form button {
+  background-color: #e3e8f1;
+  border: 0;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0 15px;
+}
+
+.card {
+  background-color: #e3e8f146;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0px 3px 10px #d2d2d2d9;
+  overflow: hidden;
+}
+
+.cover img {
+  width: 100%;
+}
+
+.detail {
+  padding: 10px;
+  color: #292929;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.source {
+  padding-top: 5px;
+  font-weight: 300;
+}
+
+.loading,
+.notfound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+#title {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.header {
+  margin: 20px auto;
+}
+
+.header a {
+  padding: 10px;
+  background-color: #292929;
+  color: white;
+  border-radius: 10px;
+}
+
+.header a i {
+  padding-right: 5px;
+}
+
+.course-title {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 1em;
+}
+
+.section {
+  margin: 10px 0;
+}
+
+.section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 2px 0;
+  border: 1px solid #eee;
+  font-size: 0.8em;
+}
+
+.section li span {
+  display: flex;
+  align-items: center;
+}
+
+.section-wrapper {
+  max-width: 700px;
+  margin: auto;
+}
+
+.type {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #292929;
+  color: white;
+  font-size: 0.8em;
+  margin: 0 10px;
+}
+
+.watch {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #292929;
+  color: white;
+  border: 0;
+  margin-left: 5px;
+}
+
+.watch:hover {
+  cursor: pointer;
+}
+
+p.lecture-title {
+  max-width: 30vw;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.fa-play {
+  font-size: 0.8em;
+}
+
+#modal video,
+.video-failed {
+  z-index: 69;
+  width: 90vw;
+}
+
+#modal,
+.bc {
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(95, 95, 95, 0.514);
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.close {
+  display: none;
+}
+
+.video-failed {
+  display: flex;
+  justify-content: center;
+}
+
+.video-failed p {
+  background-color: #292929;
+  padding: 5px;
+  border-radius: 2px;
+  margin-top: 5px;
+  color: white;
+}
