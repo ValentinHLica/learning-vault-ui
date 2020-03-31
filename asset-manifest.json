@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/learning-vault-ui/static/css/main.979c1af6.chunk.css",
+    "main.js": "/learning-vault-ui/static/js/main.58a8741a.chunk.js",
+    "main.js.map": "/learning-vault-ui/static/js/main.58a8741a.chunk.js.map",
+    "runtime-main.js": "/learning-vault-ui/static/js/runtime-main.7695d838.js",
+    "runtime-main.js.map": "/learning-vault-ui/static/js/runtime-main.7695d838.js.map",
+    "static/js/2.6a66af25.chunk.js": "/learning-vault-ui/static/js/2.6a66af25.chunk.js",
+    "static/js/2.6a66af25.chunk.js.map": "/learning-vault-ui/static/js/2.6a66af25.chunk.js.map",
+    "index.html": "/learning-vault-ui/index.html",
+    "precache-manifest.fc121aa6bfa932d66fc7901466e03be6.js": "/learning-vault-ui/precache-manifest.fc121aa6bfa932d66fc7901466e03be6.js",
+    "service-worker.js": "/learning-vault-ui/service-worker.js",
+    "static/css/main.979c1af6.chunk.css.map": "/learning-vault-ui/static/css/main.979c1af6.chunk.css.map",
+    "static/js/2.6a66af25.chunk.js.LICENSE.txt": "/learning-vault-ui/static/js/2.6a66af25.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7695d838.js",
+    "static/js/2.6a66af25.chunk.js",
+    "static/css/main.979c1af6.chunk.css",
+    "static/js/main.58a8741a.chunk.js"
+  ]
+}
