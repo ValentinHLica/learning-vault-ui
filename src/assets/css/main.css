@@ -168,6 +168,7 @@ body {
   text-align: center;
   margin: 50px 0;
   font-size: 1em;
+  margin-top: 20px;
 }
 
 .section {
@@ -192,6 +193,7 @@ body {
 .section-wrapper {
   max-width: 700px;
   margin: auto;
+  padding: 0 10px;
 }
 
 .type {
@@ -265,4 +267,13 @@ p.lecture-title {
   border-radius: 2px;
   margin-top: 5px;
   color: white;
+}
+
+.course-cover {
+  max-width: 500px;
+  margin: auto;
+}
+.course-cover img {
+  box-shadow: 0 0 20px #adadad;
+  width: 100%;
 }

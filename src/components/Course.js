@@ -48,7 +48,7 @@ export default function Course(props) {
 
       <div id="modal" className={openModal ? "open" : "close"}>
         <div className="bc" onClick={closeModal}></div>
-        <video width="400" controls autoPlay on src={video}></video>
+        <video width="400" controls autoPlay src={video}></video>
 
         <div className="video-failed">
           <p>
@@ -75,6 +75,9 @@ export default function Course(props) {
       <div className="container">
         {data.length !== 0 ? (
           <div>
+            <div className="course-cover">
+              <img src={data.cover} alt={data.title + " Cover"} />
+            </div>
             <h1 className="course-title">{data.title}</h1>
             <ol className="section-wrapper">
               {data.curriculum.map((e, index) => (
