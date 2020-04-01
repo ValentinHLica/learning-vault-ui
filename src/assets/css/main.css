@@ -166,9 +166,8 @@ body {
 
 .course-title {
   text-align: center;
-  margin: 50px 0;
+  margin: 20px 0;
   font-size: 1em;
-  margin-top: 20px;
 }
 
 .section {
@@ -276,4 +275,23 @@ p.lecture-title {
 .course-cover img {
   box-shadow: 0 0 20px #adadad;
   width: 100%;
+}
+
+.course-detail {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.course-detail ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-detail ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px 20px;
 }

@@ -79,6 +79,31 @@ export default function Course(props) {
               <img src={data.cover} alt={data.title + " Cover"} />
             </div>
             <h1 className="course-title">{data.title}</h1>
+
+            <div className="course-detail">
+              <ul>
+                <li>
+                  <span>Students:</span>
+                  <strong>{data.detail.students}</strong>
+                </li>
+                <li>
+                  <span>Sections:</span>
+                  <strong>{data.detail.sections}</strong>
+                </li>
+                <li>
+                  <span>Videos:</span>
+                  <strong>{data.detail.videos}</strong>
+                </li>
+                <li>
+                  <span>Length:</span>
+                  <strong>{data.detail.length}</strong>
+                </li>
+                <li>
+                  <span>Added Date:</span>
+                  <strong>{data.detail.addedDate}</strong>
+                </li>
+              </ul>
+            </div>
             <ol className="section-wrapper">
               {data.curriculum.map((e, index) => (
                 <li key={index}>

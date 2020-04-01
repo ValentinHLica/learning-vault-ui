@@ -9,7 +9,7 @@ export default class Provider extends Component {
       this.setState({ data: [] });
       axios
         .get(
-          `https://learning-valut-api.herokuapp.com/search/${query}?pagginatio=false`
+          `https://learning-valut-api.herokuapp.com/search/${query}?paggination=false`
         )
         .then(e => {
           this.setState({ data: e.data.data });
