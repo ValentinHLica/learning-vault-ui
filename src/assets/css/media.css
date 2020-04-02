@@ -1,7 +1,14 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @media (min-width: 590px) {
   .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -10,6 +17,7 @@
   }
 
   .title {
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -32,11 +40,22 @@
   }
 
   .course-detail ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
 
   #modal video {
     width: 60vw;
+  }
+
+  .watch {
+    padding: 5px;
+  }
+
+  .watch p {
+    display: block;
   }
 }
 

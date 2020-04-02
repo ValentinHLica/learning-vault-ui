@@ -114,10 +114,7 @@ export default function Course(props) {
                   <ul className="section">
                     {e.lections.map((lec, lecIndex) => {
                       return (
-                        <li
-                          key={lecIndex}
-                          onClick={changeVideo.bind(this, lec.lectureVideo)}
-                        >
+                        <li key={lecIndex}>
                           <span>
                             <p className="lecture-title">{lec.info.title}</p>
                             <span className="type">{lec.info.type}</span>
@@ -125,8 +122,11 @@ export default function Course(props) {
 
                           <span>
                             <p>{lec.info.length}</p>
-                            <button className="watch">
-                              <i className="fas fa-play"></i> Watch
+                            <button
+                              className="watch"
+                              onClick={changeVideo.bind(this, lec.lectureVideo)}
+                            >
+                              <i className="fas fa-play"></i> <p>Watch</p>
                             </button>
                           </span>
                         </li>
