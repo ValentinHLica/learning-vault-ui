@@ -1,0 +1,150 @@
+/* Container */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.search-header {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-header .search-logo img {
+  width: 150px;
+}
+
+.search-header ul {
+  display: flex;
+}
+
+.search-header ul li {
+  margin: 0 10px;
+}
+
+.search-header {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.search-page form {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin: 50px auto;
+}
+.search-page form input {
+  padding: 10px;
+  border: 0;
+  border-top-left-radius: 5px;
+  background-color: #2d2d2d;
+  border-bottom-left-radius: 5px;
+  width: 100%;
+}
+
+.search-page form button {
+  padding: 10px;
+  border: 0;
+  border-top-right-radius: 5px;
+  background-color: #232121;
+  border-bottom-right-radius: 5px;
+}
+
+.search-page form button:hover {
+  cursor: pointer;
+}
+
+/* Card */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.search-card {
+  max-width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #272231;
+  margin: 10px 0;
+}
+
+.search-card .cover img {
+  width: 250px;
+}
+
+.search-card .title {
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.9em;
+}
+
+.search-card .card-detail {
+  padding: 5px 10px;
+}
+
+@media (min-width: 768px) {
+  .search-header {
+    width: 750px;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-page form {
+    width: 80vw;
+  }
+}
+
+/* Paggination */
+
+.paggination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.paggination ul {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.paggination ul li {
+  padding: 10px 15px;
+  background-color: #272231;
+}
+
+.paggination ul li:hover {
+  cursor: pointer;
+  background-color: #1a1620;
+}
+
+.paggination ul .current {
+  background-color: #ea5252;
+}
+
+.info {
+  font-size: 0.875rem;
+}

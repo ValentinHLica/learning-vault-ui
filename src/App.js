@@ -1,12 +1,12 @@
 import React from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
-// Context
+// Context Provider
 import Provider from "./components/Context";
 
-// Search
-import Search from "./components/Search";
-import Course from "./components/Course";
+// Components
+import Search from "./components/Search/Main";
+import Course from "./components/Course/Main";
 
 export default function App() {
   return (

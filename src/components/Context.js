@@ -1,28 +1,33 @@
 import React, { Component } from "react";
-import axios from "axios";
+import Cookies from "universal-cookie";
 
 const Context = React.createContext();
 export default class Provider extends Component {
   state = {
-    data: [],
-    setData: (query, loading, setNotFound) => {
-      this.setState({ data: [] });
-      axios
-        .get(
-          `https://learning-valut-api.herokuapp.com/search/${query}?paggination=false`
-        )
-        .then(e => {
-          this.setState({ data: e.data.data });
-        })
-        .then(() => {
-          loading(false);
-        })
-        .catch(() => {
-          loading(false);
-          setNotFound(true);
-        });
-    }
+    query: "",
+    setQuery: (e) => {
+      this.setState({ query: e.target.value });
+    },
+    searchData: [],
+    setSearchData: (data) => {
+      this.setState({ searchData: data });
+    },
+    paggination: [0, 10, 1],
+    setPaggination: (paggination) => {
+      this.setState({
+        paggination,
+      });
+    },
+    token: null,
   };
+
+  componentDidMount() {
+    const cookies = new Cookies();
+    const token = cookies.get("token");
+    if (token) {
+      this.setState({ token });
+    }
+  }
 
   render() {
     return (
