@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/learning-vault-ui/precache-manifest.e53c13fd8ba6e8557e1736318b97d022.js"
+  "/learning-vault-ui/precache-manifest.f79d15aabdb03446400f72ff23ebbdfb.js"
 );
 
 self.addEventListener('message', (event) => {
