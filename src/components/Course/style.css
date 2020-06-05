@@ -1,0 +1,143 @@
+.course {
+  overflow: hidden;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.course-detail {
+  width: 60%;
+  margin-top: 80px;
+  padding: 0 10px;
+  overflow-y: scroll;
+}
+
+.course-title {
+  margin-top: 20px;
+}
+
+.course-short-description {
+  margin: 10px 0;
+}
+
+.course-info li {
+  display: grid;
+  grid-template-columns: 150px auto;
+  margin: 20px 0;
+  border-bottom: 2px solid #2f343a;
+  /* padding-bottom: 10px; */
+}
+
+.course-info li:last-child {
+  border: none;
+}
+
+.course-info .number ul {
+  margin: 0;
+}
+
+.course-info .number ul:first-child {
+  margin-right: 40px;
+}
+
+.course-info .course-description ul {
+  padding-left: 40px;
+  margin: 20px 0;
+}
+
+.course-info li ul li {
+  margin: 5px 0;
+  display: flex;
+  border: none;
+}
+
+.course-info li ul li::before {
+  content: "\2022";
+  color: #bd2e2a;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.course-info strong {
+  padding: 0 5px;
+}
+
+.course-info .course-description strong {
+  padding: 0;
+}
+
+.course-number,
+.course-learn,
+.course-requirements,
+.course-description {
+  padding: 20px 0;
+}
+
+/* ssssss */
+
+.course-content {
+  width: 40%;
+  margin-top: 80px;
+  padding: 0 10px;
+  overflow-y: scroll;
+}
+
+.course-content h2 {
+  margin: 20px 0;
+}
+
+.course-content .section {
+  /* background-color: #292e35; */
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.course-content .section-title {
+  background-color: #292e35;
+  padding: 10px;
+  border-radius: 3px;
+  justify-content: space-between;
+}
+
+.course-content .section-title .drop-section {
+  background: #bd2e2a;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.section li ul {
+  padding: 10px;
+}
+
+.section li ul li {
+  padding: 10px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-between;
+  background-color: #292e35;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.section li ul li:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.section li ul li div {
+  font-size: 0.8em;
+  background-color: #454e56;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+video {
+  width: 100%;
+}
+
+.course-not-found {
+  margin: auto;
+}

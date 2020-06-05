@@ -1,33 +1,21 @@
 import React, { Component } from "react";
-import Cookies from "universal-cookie";
 
-const Context = React.createContext();
+export const Context = React.createContext();
 export default class Provider extends Component {
   state = {
-    query: "",
-    setQuery: (e) => {
-      this.setState({ query: e.target.value });
+    login: false,
+    logOut: () => {
+      this.setState({ login: !this.state.login });
     },
-    searchData: [],
-    setSearchData: (data) => {
-      this.setState({ searchData: data });
+    searchResults: [],
+    setSearchResults: (data) => {
+      this.setState({ searchResults: data });
     },
-    paggination: [0, 10, 1],
+    paggination: [],
     setPaggination: (paggination) => {
-      this.setState({
-        paggination,
-      });
+      this.setState({ paggination });
     },
-    token: null,
   };
-
-  componentDidMount() {
-    const cookies = new Cookies();
-    const token = cookies.get("token");
-    if (token) {
-      this.setState({ token });
-    }
-  }
 
   render() {
     return (
