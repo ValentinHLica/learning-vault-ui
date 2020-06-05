@@ -12,7 +12,7 @@ import Search from "./components/Search/Index";
 import Course from "./components/Course/Index";
 
 export default function App() {
-  window.APIUrl = "https://learning-valut-api.herokuapp.com/";
+  window.APIUrl = "https://learning-valut-api.herokuapp.com";
   return (
     <Provider>
       <Router>
