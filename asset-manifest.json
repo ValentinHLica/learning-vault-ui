@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/learning-vault-ui/static/css/main.744d3e9f.chunk.css",
-    "main.js": "/learning-vault-ui/static/js/main.d66ada32.chunk.js",
-    "main.js.map": "/learning-vault-ui/static/js/main.d66ada32.chunk.js.map",
+    "main.css": "/learning-vault-ui/static/css/main.73180dc5.chunk.css",
+    "main.js": "/learning-vault-ui/static/js/main.45e656e3.chunk.js",
+    "main.js.map": "/learning-vault-ui/static/js/main.45e656e3.chunk.js.map",
     "runtime-main.js": "/learning-vault-ui/static/js/runtime-main.7695d838.js",
     "runtime-main.js.map": "/learning-vault-ui/static/js/runtime-main.7695d838.js.map",
-    "static/js/2.d226d3d5.chunk.js": "/learning-vault-ui/static/js/2.d226d3d5.chunk.js",
-    "static/js/2.d226d3d5.chunk.js.map": "/learning-vault-ui/static/js/2.d226d3d5.chunk.js.map",
+    "static/js/2.ea04cfbb.chunk.js": "/learning-vault-ui/static/js/2.ea04cfbb.chunk.js",
+    "static/js/2.ea04cfbb.chunk.js.map": "/learning-vault-ui/static/js/2.ea04cfbb.chunk.js.map",
     "index.html": "/learning-vault-ui/index.html",
-    "precache-manifest.f79d15aabdb03446400f72ff23ebbdfb.js": "/learning-vault-ui/precache-manifest.f79d15aabdb03446400f72ff23ebbdfb.js",
+    "precache-manifest.998123ab192bd6a4f66184bdd69fa9d8.js": "/learning-vault-ui/precache-manifest.998123ab192bd6a4f66184bdd69fa9d8.js",
     "service-worker.js": "/learning-vault-ui/service-worker.js",
-    "static/css/main.744d3e9f.chunk.css.map": "/learning-vault-ui/static/css/main.744d3e9f.chunk.css.map",
-    "static/js/2.d226d3d5.chunk.js.LICENSE.txt": "/learning-vault-ui/static/js/2.d226d3d5.chunk.js.LICENSE.txt"
+    "static/css/main.73180dc5.chunk.css.map": "/learning-vault-ui/static/css/main.73180dc5.chunk.css.map",
+    "static/js/2.ea04cfbb.chunk.js.LICENSE.txt": "/learning-vault-ui/static/js/2.ea04cfbb.chunk.js.LICENSE.txt",
+    "static/media/main.css": "/learning-vault-ui/static/media/SofiaProRegular.edbd56cb.ttf",
+    "static/media/arrow-left.svg": "/learning-vault-ui/static/media/arrow-left.93b555fa.svg",
+    "static/media/arrow-right.svg": "/learning-vault-ui/static/media/arrow-right.1e781954.svg",
+    "static/media/chevron-down.svg": "/learning-vault-ui/static/media/chevron-down.bf1a347e.svg",
+    "static/media/frown.svg": "/learning-vault-ui/static/media/frown.8c801051.svg",
+    "static/media/logo.svg": "/learning-vault-ui/static/media/logo.c7f9cc9f.svg",
+    "static/media/menu.svg": "/learning-vault-ui/static/media/menu.590f7a38.svg",
+    "static/media/settings.svg": "/learning-vault-ui/static/media/settings.56a251b9.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.7695d838.js",
-    "static/js/2.d226d3d5.chunk.js",
-    "static/css/main.744d3e9f.chunk.css",
-    "static/js/main.d66ada32.chunk.js"
+    "static/js/2.ea04cfbb.chunk.js",
+    "static/css/main.73180dc5.chunk.css",
+    "static/js/main.45e656e3.chunk.js"
   ]
 }
