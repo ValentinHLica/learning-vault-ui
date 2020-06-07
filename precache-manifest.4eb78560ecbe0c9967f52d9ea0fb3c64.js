@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "43072f64f4e369230cbbeea0ac26cd0c",
+    "revision": "81dc1a9d3c5925ec789b5bf376ef2242",
     "url": "/learning-vault-ui/index.html"
   },
   {
-    "revision": "0e6d8bcc52ebe727328f",
+    "revision": "6f8a49ac9b4f2a4e228d",
     "url": "/learning-vault-ui/static/css/main.0687621e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-vault-ui/static/js/2.90918d38.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0e6d8bcc52ebe727328f",
-    "url": "/learning-vault-ui/static/js/main.c6c6651b.chunk.js"
+    "revision": "6f8a49ac9b4f2a4e228d",
+    "url": "/learning-vault-ui/static/js/main.e88d9aea.chunk.js"
   },
   {
     "revision": "290cae8ee4a5a4d5c11c",
