@@ -22,7 +22,7 @@ import Register from "./components/User/Register";
 // import ForgotPassword from "./components/User/ForgotPassword";
 
 export default function App() {
-  window.APIUrl = "http://localhost:5000";
+  window.APIUrl = "https://learning-valut-api.herokuapp.com";
   return (
     <Provider>
       <Router>
