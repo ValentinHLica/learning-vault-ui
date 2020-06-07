@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "21b6a12677655c0c0329d077d3ab7fc7",
+    "revision": "43072f64f4e369230cbbeea0ac26cd0c",
     "url": "/learning-vault-ui/index.html"
   },
   {
-    "revision": "7e32a343bbfb18012464",
-    "url": "/learning-vault-ui/static/css/main.73180dc5.chunk.css"
+    "revision": "0e6d8bcc52ebe727328f",
+    "url": "/learning-vault-ui/static/css/main.0687621e.chunk.css"
   },
   {
-    "revision": "4b5326158e5b660c92ee",
-    "url": "/learning-vault-ui/static/js/2.ea04cfbb.chunk.js"
+    "revision": "da7dadecc86ee9434bd5",
+    "url": "/learning-vault-ui/static/js/2.90918d38.chunk.js"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/learning-vault-ui/static/js/2.ea04cfbb.chunk.js.LICENSE.txt"
+    "revision": "ef7f0128066dad638e14e7838f835a83",
+    "url": "/learning-vault-ui/static/js/2.90918d38.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7e32a343bbfb18012464",
-    "url": "/learning-vault-ui/static/js/main.cde2aee3.chunk.js"
+    "revision": "0e6d8bcc52ebe727328f",
+    "url": "/learning-vault-ui/static/js/main.c6c6651b.chunk.js"
   },
   {
     "revision": "290cae8ee4a5a4d5c11c",
@@ -36,12 +36,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-vault-ui/static/media/arrow-right.1e781954.svg"
   },
   {
+    "revision": "abc59452d78316ace408d807fd41af67",
+    "url": "/learning-vault-ui/static/media/check.abc59452.svg"
+  },
+  {
     "revision": "bf1a347ebf96807e7beb01e7742f3ec0",
     "url": "/learning-vault-ui/static/media/chevron-down.bf1a347e.svg"
   },
   {
+    "revision": "507d3535957012d6730789129de69090",
+    "url": "/learning-vault-ui/static/media/eye-off.507d3535.svg"
+  },
+  {
+    "revision": "bf058e327399fb58a6e2b6ba539a9aff",
+    "url": "/learning-vault-ui/static/media/eye.bf058e32.svg"
+  },
+  {
     "revision": "8c8010517b0bf3d547dc06b6f90f8a6f",
     "url": "/learning-vault-ui/static/media/frown.8c801051.svg"
+  },
+  {
+    "revision": "e7d1690fac4d2dc5a16453d02de7d2b0",
+    "url": "/learning-vault-ui/static/media/loader.e7d1690f.svg"
   },
   {
     "revision": "c7f9cc9fea3c9a74868f9ad61cd8f0a8",
