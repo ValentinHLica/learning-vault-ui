@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Context } from "../Context";
+// import { Context } from "../Context";
 import axios from "axios";
 
 // Header
@@ -12,7 +12,7 @@ import Card from "../Other/Card";
 // import ArrowRightIcon from "../../assets/img/arrow-right.svg";
 
 export default function Index(props) {
-  const { logOut, login } = React.useContext(Context);
+  // const { logOut, login } = React.useContext(Context);
 
   const [recentCourses, setRecent] = useState([]);
   const [popularCourses, setPopular] = useState([]);
@@ -47,16 +47,10 @@ export default function Index(props) {
     <div>
       <Header props={props} page="main" />
       <div className="wrapper container">
-        <button onClick={logOut}>loginf</button>
-        {login ? (
+        {/* {login ? (
           <div className="user-courses">
             <h2>Continue Watching</h2>
             <div className="row flex items-center">
-              {/* <Card
-                courseCover="https://www.learningcrux.com/image/5d457881d068d927f6adf171?width=250"
-                title="NodeJS - The Complete Guide (incl. MVC, REST APIs, GraphQL)"
-                loading={loading}
-              />
               <Card
                 courseCover="https://www.learningcrux.com/image/5d457881d068d927f6adf171?width=250"
                 title="NodeJS - The Complete Guide (incl. MVC, REST APIs, GraphQL)"
@@ -66,16 +60,21 @@ export default function Index(props) {
                 courseCover="https://www.learningcrux.com/image/5d457881d068d927f6adf171?width=250"
                 title="NodeJS - The Complete Guide (incl. MVC, REST APIs, GraphQL)"
                 loading={loading}
-              /> */}
+              />
+              <Card
+                courseCover="https://www.learningcrux.com/image/5d457881d068d927f6adf171?width=250"
+                title="NodeJS - The Complete Guide (incl. MVC, REST APIs, GraphQL)"
+                loading={loading}
+              />
 
-              {/* <div className="your-courses-wrapper flex items-center justify-center pointer">
+              <div className="your-courses-wrapper flex items-center justify-center pointer">
               <div className="your-courses flex items-center justify-center">
                 <img src={ArrowRightIcon} alt="Arrow Right Icon" />
               </div>
-            </div> */}
+            </div>
             </div>
           </div>
-        ) : null}
+        ) : null} */}
 
         {loading ? (
           <div className="loading-contet">

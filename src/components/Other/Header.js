@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Context } from "../Context";
+import Cookies from "universal-cookie";
 
 import { Link } from "react-router-dom";
 
@@ -41,7 +42,21 @@ export default function Header(props) {
     props.props.history.push(`/search/${query}`);
   };
 
-  const { login } = React.useContext(Context);
+  const { logOut, token, username } = React.useContext(Context);
+
+  const logOutFun = () => {
+    const cookies = new Cookies();
+    cookies.remove("token");
+    cookies.remove("username");
+    logOut();
+
+    setDropdownOpen(false);
+    setMobileDropdown(false);
+
+    if (props.page !== "main") {
+      props.props.history.push("/");
+    }
+  };
 
   return (
     <header>
@@ -61,9 +76,9 @@ export default function Header(props) {
         </div>
 
         <div>
-          {login ? (
+          {token ? (
             <div className="flex items-center menu header-lg">
-              <p>UserName</p>
+              <p>{username}</p>
               <div
                 className="settings-button pointer flex justify-center items-center"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -77,13 +92,19 @@ export default function Header(props) {
               >
                 <li>Account</li>
                 <li>Your'e Courses</li>
-                <li>Log Out</li>
+                <li onClick={logOutFun} className="pointer">
+                  Log Out
+                </li>
               </ul>
             </div>
           ) : (
             <ul className="flex justify-center items-center header-lg">
-              <li>Login</li>
-              <li>Register</li>
+              <li>
+                <Link to="/login">Login</Link>
+              </li>
+              <li>
+                <Link to="/register">Register</Link>
+              </li>
             </ul>
           )}
 
@@ -107,16 +128,20 @@ export default function Header(props) {
                 mobile={true}
               />
             </li>
-            {login ? (
+            {token ? (
               <React.Fragment>
                 <li>Account</li>
                 <li>Your'e Courses</li>
-                <li>Log Out</li>
+                <li onClick={logOutFun}>Log Out</li>
               </React.Fragment>
             ) : (
               <React.Fragment>
-                <li>Login</li>
-                <li>Register</li>
+                <li>
+                  <Link to="/login">Login</Link>
+                </li>
+                <li>
+                  <Link to="/register">Register</Link>
+                </li>
               </React.Fragment>
             )}
           </ul>

@@ -1,11 +1,16 @@
 import React, { Component } from "react";
+import Cookies from "universal-cookie";
 
 export const Context = React.createContext();
 export default class Provider extends Component {
   state = {
-    login: false,
+    token: undefined,
+    username: undefined,
+    signIn: (token, username) => {
+      this.setState({ token, username });
+    },
     logOut: () => {
-      this.setState({ login: !this.state.login });
+      this.setState({ token: undefined, username: undefined });
     },
     searchResults: [],
     setSearchResults: (data) => {
@@ -16,6 +21,15 @@ export default class Provider extends Component {
       this.setState({ paggination });
     },
   };
+
+  componentDidMount() {
+    const cookies = new Cookies();
+    const token = cookies.get("token");
+    const username = cookies.get("username");
+    if (token) {
+      this.setState({ token, username });
+    }
+  }
 
   render() {
     return (

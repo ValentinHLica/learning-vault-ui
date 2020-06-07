@@ -86,3 +86,18 @@ header .mobile-bc {
 }
 
 /* Header ### End ### */
+
+/* Form ### Start ### */
+@media (max-width: 500px) {
+  .user-form {
+    width: 90vw;
+  }
+}
+/* Form ### End ### */
+
+
+@media (max-width: 580px) {
+  .row {
+    justify-content: center;
+  }
+}

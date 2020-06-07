@@ -7,6 +7,9 @@ import Header from "../Other/Header";
 // Course Content
 import Content from "./Content";
 
+// Loading
+import Loading from "../Other/Loading";
+
 // Stylesheet
 import "./style.css";
 
@@ -44,6 +47,25 @@ export default function Index(props) {
     setLoading(false);
   };
 
+  const sectionLoading = () => {
+    const load = [];
+
+    for (let i = 0; i < 4; i++) {
+      load.push(
+        <Loading
+          loadingWidth="100%"
+          loadingHeight="50px"
+          loaderWidth="40px"
+          loaderHeight="50px"
+          margin="0 0 20px 0"
+          key={i}
+        />
+      );
+    }
+
+    return load;
+  };
+
   useEffect(() => {
     fetchCourse();
 
@@ -55,8 +77,6 @@ export default function Index(props) {
       <Header props={props} />
 
       <div className="wrapper container course flex">
-        {loading ? "loading..." : null}
-
         {error ? (
           <h2 className="not-found-error-message course-not-found flex items-center justify-center ">
             <img src={NotFoundFaceIcon} alt="Not Found Icon" />
@@ -65,6 +85,26 @@ export default function Index(props) {
         ) : (
           <React.Fragment>
             <div className="course-detail">
+              {loading ? (
+                <Loading
+                  loadingWidth="100%"
+                  loadingHeight="370px"
+                  loaderWidth="40px"
+                  loaderHeight="370px"
+                  margin="0 0 0 0 "
+                />
+              ) : null}
+
+              {loading ? (
+                <Loading
+                  loadingWidth="100%"
+                  loadingHeight="100px"
+                  loaderWidth="40px"
+                  loaderHeight="100px"
+                  margin="20px 0 0 0 "
+                />
+              ) : null}
+
               {course.title ? (
                 <React.Fragment>
                   <video
@@ -79,7 +119,7 @@ export default function Index(props) {
                   <p className="course-short-description">{course.headline}</p>
 
                   <ul className="course-info">
-                    <li className="course-number">
+                    <li className="course-number course-grid">
                       <p>By the numbers</p>
                       <div className="number flex">
                         <ul>
@@ -105,25 +145,29 @@ export default function Index(props) {
                       </div>
                     </li>
 
-                    <li className="course-learn">
-                      <p>You will learn:</p>
-                      <ul>
-                        {course.learn.map((learn, index) => {
-                          return <li>{learn}</li>;
-                        })}
-                      </ul>
-                    </li>
+                    {course.learn.length !== 0 ? (
+                      <li className="course-learn course-grid">
+                        <p>You will learn:</p>
+                        <ul>
+                          {course.learn.map((learn, index) => {
+                            return <li key={index}>{learn}</li>;
+                          })}
+                        </ul>
+                      </li>
+                    ) : null}
 
-                    <li className="course-requirements">
-                      <p>Requirements:</p>
-                      <ul>
-                        {course.requirements.map((requirement, index) => {
-                          return <li>{requirement}</li>;
-                        })}
-                      </ul>
-                    </li>
+                    {course.requirements.length !== 0 ? (
+                      <li className="course-requirements course-grid">
+                        <p>Requirements:</p>
+                        <ul>
+                          {course.requirements.map((requirement, index) => {
+                            return <li key={index}>{requirement}</li>;
+                          })}
+                        </ul>
+                      </li>
+                    ) : null}
 
-                    <li className="course-description">
+                    <li className="course-description course-grid">
                       <p>Description:</p>
                       <div
                         dangerouslySetInnerHTML={{ __html: course.desc }}
@@ -135,6 +179,9 @@ export default function Index(props) {
             </div>
             <div className="course-content">
               <h2>Course Content</h2>
+
+              {loading ? sectionLoading() : null}
+
               {course.title ? (
                 <Content
                   curriculum={course.curriculum}

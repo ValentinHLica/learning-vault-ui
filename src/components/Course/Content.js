@@ -8,7 +8,7 @@ export default function Content(props) {
           <ul className="section" key={sectionIndex}>
             <div className="section-title flex items-center">
               <p>
-                {section.sectionCount} {section.sectionTitle}
+                {section.sectionCount}: {section.sectionTitle}
               </p>
               <div className="drop-section pointer flex items-center justify-center">
                 <img src={props.icon} alt="Dropdown Icon" />

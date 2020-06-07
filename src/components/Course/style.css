@@ -4,6 +4,7 @@
   margin: 0 auto;
 }
 
+/* Course Detail ### Start ### */
 .course-detail {
   width: 60%;
   margin-top: 80px;
@@ -19,12 +20,11 @@
   margin: 10px 0;
 }
 
-.course-info li {
+.course-grid {
   display: grid;
   grid-template-columns: 150px auto;
   margin: 20px 0;
   border-bottom: 2px solid #2f343a;
-  /* padding-bottom: 10px; */
 }
 
 .course-info li:last-child {
@@ -42,6 +42,10 @@
 .course-info .course-description ul {
   padding-left: 40px;
   margin: 20px 0;
+}
+
+.course-info .course-description p {
+  word-break: break-all;
 }
 
 .course-info li ul li {
@@ -65,6 +69,7 @@
 
 .course-info .course-description strong {
   padding: 0;
+  display: contents;
 }
 
 .course-number,
@@ -74,7 +79,9 @@
   padding: 20px 0;
 }
 
-/* ssssss */
+/* Course Detail ### End ### */
+
+/* Course Content ### Start ### */
 
 .course-content {
   width: 40%;
@@ -127,6 +134,10 @@
   cursor: pointer;
 }
 
+.section li ul li p {
+  width: 80%;
+}
+
 .section li ul li div {
   font-size: 0.8em;
   background-color: #454e56;
@@ -134,6 +145,13 @@
   padding: 5px;
 }
 
+.section-title p {
+  width: 90%;
+}
+
+/* Course Content ### End ### */
+
+/* Other ### Start ### */
 video {
   width: 100%;
 }
@@ -141,3 +159,28 @@ video {
 .course-not-found {
   margin: auto;
 }
+
+/* Other ### End ### */
+
+/* Media ### Start ### */
+@media (max-width: 990px) {
+  .course-content {
+    width: 100%;
+    display: none;
+    /* position: fixed;
+    background-color: #2f343a;
+    left: 0;
+    z-index: 3;
+    top: 77vh; */
+    /* bottom: 50px; */
+  }
+
+  .course-detail {
+    width: 100%;
+  }
+
+  .course {
+    overflow: hidden;
+  }
+}
+/* Media ### End ### */
