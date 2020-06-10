@@ -12,10 +12,6 @@ export default class Provider extends Component {
     logOut: () => {
       this.setState({ token: undefined, username: undefined });
     },
-    searchResults: [],
-    setSearchResults: (data) => {
-      this.setState({ searchResults: data });
-    },
     paggination: [],
     setPaggination: (paggination) => {
       this.setState({ paggination });

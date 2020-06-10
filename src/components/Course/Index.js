@@ -26,6 +26,8 @@ export default function Index(props) {
   const [error, setError] = useState(false);
   const [video, setVideo] = useState("");
 
+  // const [openCourse, setopenCourse] = useState(false);
+
   const changeVideo = (url) => {
     setVideo("https://www.learningcrux.com" + url);
   };
@@ -177,17 +179,32 @@ export default function Index(props) {
                 </React.Fragment>
               ) : null}
             </div>
-            <div className="course-content">
+
+            {/* {!loading && !error ? (
+              <div
+                className="content-button"
+                onClick={() => setopenCourse(true)}
+              >
+                Content
+              </div>
+            ) : null} */}
+
+            <div
+              className={`course-content `} //${openCourse ? "course-open" : ""}
+            >
               <h2>Course Content</h2>
 
               {loading ? sectionLoading() : null}
 
               {course.title ? (
-                <Content
-                  curriculum={course.curriculum}
-                  changeVideo={changeVideo}
-                  icon={DropDownSectionIcon}
-                />
+                <div className="content-wrapper">
+                  <Content
+                    curriculum={course.curriculum}
+                    changeVideo={changeVideo}
+                    icon={DropDownSectionIcon}
+                    // setopenCourse={setopenCourse}
+                  />
+                </div>
               ) : null}
             </div>
           </React.Fragment>

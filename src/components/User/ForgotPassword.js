@@ -4,13 +4,17 @@ import axios from "axios";
 // Header
 import Header from "../Other/Header";
 
+// Submit Input
+import SubmitInput from "../Other/SubmitInput";
+
 export default function ForgotPassword(props) {
   const [email, setEmail] = useState("");
   const [emptyEmail, setEmptyEmail] = useState(false);
 
   const [formError, setFormError] = useState(false);
   const [formSuccess, setFormSuccess] = useState(false);
-  const [invalidEmail, setInvalidEmail] = useState(false);
+
+  const [loading, setLoading] = useState(false);
 
   const submit = async (form) => {
     form.preventDefault();
@@ -19,16 +23,21 @@ export default function ForgotPassword(props) {
       return;
     }
 
+    setFormSuccess(false);
+    setFormError(false);
+    setLoading(true);
     const APIUrl = window.APIUrl;
 
     await axios
-      .post(`${APIUrl}/forgotpassword`, { email })
+      .post(`${APIUrl}/auth/forgotpassword`, { email })
       .then((reponse) => {
-        console.log(reponse.data);
+        setFormSuccess(true);
       })
       .catch((response) => {
-        console.log(response);
+        setFormError(true);
       });
+
+    setLoading(false);
   };
 
   return (
@@ -57,9 +66,15 @@ export default function ForgotPassword(props) {
           <p className="empty-input-error">Please provide email address</p>
         ) : null}
 
-        <button type="submit" className="pointer">
-          GO
-        </button>
+        <SubmitInput
+          error={formError}
+          success={formSuccess}
+          value="Go"
+          errorMessage="Invalid Credentials"
+          loading={loading}
+        />
+
+        {formSuccess ? <p>Please check your email address</p> : null}
       </form>
     </div>
   );

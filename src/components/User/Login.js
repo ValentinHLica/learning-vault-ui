@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cookies from "universal-cookie";
 import { Context } from "../Context";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import axios from "axios";
 
@@ -126,7 +126,7 @@ export default function Login(props) {
           <PasswordInput
             class="password"
             title="Password"
-            type="email"
+            type="password"
             setInput={setPassword}
             emptyInput={emptyPassword}
             setEmptyInput={setEmptyPassword}
@@ -144,9 +144,9 @@ export default function Login(props) {
             loading={loading}
           />
 
-          {/* <Link to="/forgotpassword" className="forgot-password-link">
+          <Link to="/forgotpassword" className="forgot-password-link">
             Forgot Password
-          </Link> */}
+          </Link>
         </form>
       </div>
     </div>

@@ -21,12 +21,9 @@ export default function Index(props) {
   const [loading, setLoading] = useState(true);
   const [error, seterror] = useState(false);
 
-  const {
-    searchResults,
-    setSearchResults,
-    paggination,
-    setPaggination,
-  } = React.useContext(Context);
+  const [searchResults, setSearchResults] = useState([]);
+
+  const { paggination, setPaggination } = React.useContext(Context);
 
   const APIUrl = window.APIUrl;
 
@@ -67,11 +64,7 @@ export default function Index(props) {
   };
 
   useEffect(() => {
-    if (searchResults.length === 0) {
-      searchCourses();
-      return;
-    }
-    setLoading(false);
+    searchCourses(props.match.params.query);
 
     //eslint-disable-next-line
   }, []);

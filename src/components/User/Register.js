@@ -137,7 +137,7 @@ export default function Register(props) {
           <PasswordInput
             class="password"
             title="Password"
-            type="email"
+            type="password"
             setInput={setPassword}
             emptyInput={emptyPassword}
             setEmptyInput={setEmptyPassword}

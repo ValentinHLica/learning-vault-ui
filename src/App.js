@@ -19,10 +19,13 @@ import Login from "./components/User/Login";
 import Register from "./components/User/Register";
 
 // Forgot Password
-// import ForgotPassword from "./components/User/ForgotPassword";
+import ForgotPassword from "./components/User/ForgotPassword";
+
+// Forgot Password
+import ResetPassword from "./components/User/ResetPassword";
 
 export default function App() {
-  window.APIUrl = "https://learning-valut-api.herokuapp.com";
+  window.APIUrl = "http://localhost:5000";
   return (
     <Provider>
       <Router>
@@ -32,7 +35,8 @@ export default function App() {
           <Route exact path="/course/:courseUrl" component={Course} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
-          {/* <Route exact path="/forgotpassword" component={ForgotPassword} /> */}
+          <Route exact path="/forgotpassword" component={ForgotPassword} />
+          <Route exact path="/resetpassword/:token" component={ResetPassword} />
         </Switch>
       </Router>
     </Provider>

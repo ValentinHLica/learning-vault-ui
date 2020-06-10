@@ -162,17 +162,44 @@ video {
 
 /* Other ### End ### */
 
+.content-button {
+  display: none;
+}
+
 /* Media ### Start ### */
 @media (max-width: 990px) {
+  .content-button {
+    display: block;
+    position: fixed;
+    right: 10vw;
+    bottom: 5vh;
+    background-color: #bd2e2a;
+    padding: 15px 10vw;
+    border-radius: 5px;
+  }
+
   .course-content {
     width: 100%;
-    display: none;
     /* position: fixed;
     background-color: #2f343a;
     left: 0;
     z-index: 3;
     top: 77vh; */
     /* bottom: 50px; */
+    position: absolute;
+    background-color: #202429;
+    left: 0;
+    right: 0;
+    top: 90vh;
+    transition: top 0.4s;
+  }
+
+  .course-open {
+    top: 0px;
+  }
+
+  .content-wrapper {
+    overflow: scroll;
   }
 
   .course-detail {
@@ -181,6 +208,24 @@ video {
 
   .course {
     overflow: hidden;
+  }
+
+  .course-grid,
+  .number {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-info ul {
+    padding-left: 10px;
+  }
+
+  .course-detail .loading:first-child {
+    height: 50vh !important;
+  }
+
+  .course-detail .loading:last-child {
+    height: 20vh !important;
   }
 }
 /* Media ### End ### */
