@@ -180,26 +180,35 @@ video {
 
   .course-content {
     width: 100%;
-    /* position: fixed;
-    background-color: #2f343a;
-    left: 0;
-    z-index: 3;
-    top: 77vh; */
-    /* bottom: 50px; */
     position: absolute;
     background-color: #202429;
     left: 0;
     right: 0;
-    top: 90vh;
-    transition: top 0.4s;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s;
   }
 
   .course-open {
-    top: 0px;
+    visibility: visible;
+    opacity: 1;
   }
 
-  .content-wrapper {
-    overflow: scroll;
+  .close-content {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 6;
+  }
+
+  .close-content img {
+    background-color: #bd2e2a;
+    padding: 5px;
+    border-radius: 5px;
   }
 
   .course-detail {

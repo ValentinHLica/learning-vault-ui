@@ -468,4 +468,8 @@ header .setting-dropdown li {
   margin-top: 20px;
 }
 
+.current-lection {
+  background-color: #33bd2a !important;
+}
+
 /* Other ### End ### */

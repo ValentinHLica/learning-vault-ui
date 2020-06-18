@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Content(props) {
+  const [currentVideo, setCurrentVideo] = useState(null);
+
   return (
     <React.Fragment>
       {props.curriculum.map((section, sectionIndex) => {
@@ -21,10 +23,16 @@ export default function Content(props) {
                   return (
                     <li
                       key={lectionIndex}
-                      onClick={props.changeVideo.bind(
-                        this,
-                        lection.lectureVideo
-                      )}
+                      onClick={() => {
+                        props.changeVideo(lection.lectureVideo);
+                        props.setopenCourse(false);
+                        setCurrentVideo(sectionIndex + "," + lectionIndex);
+                      }}
+                      className={
+                        currentVideo === sectionIndex + "," + lectionIndex
+                          ? "current-lection"
+                          : ""
+                      }
                     >
                       <p>{lection.info.title}</p>
                       <div>{lection.info.length}</div>

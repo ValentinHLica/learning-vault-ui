@@ -19,6 +19,9 @@ import DropDownSectionIcon from "../../assets/img/chevron-down.svg";
 // Not Found Face Icon
 import NotFoundFaceIcon from "../../assets/img/frown.svg";
 
+// Close Icon
+import CloseContentIcon from "../../assets/img/x.svg";
+
 export default function Index(props) {
   const [course, setCourse] = useState({});
 
@@ -26,7 +29,7 @@ export default function Index(props) {
   const [error, setError] = useState(false);
   const [video, setVideo] = useState("");
 
-  // const [openCourse, setopenCourse] = useState(false);
+  const [openCourse, setopenCourse] = useState(false);
 
   const changeVideo = (url) => {
     setVideo("https://www.learningcrux.com" + url);
@@ -180,17 +183,28 @@ export default function Index(props) {
               ) : null}
             </div>
 
-            {/* {!loading && !error ? (
-              <div
-                className="content-button"
-                onClick={() => setopenCourse(true)}
-              >
-                Content
-              </div>
-            ) : null} */}
+            {!loading && !error ? (
+              <React.Fragment>
+                <div
+                  className="content-button"
+                  onClick={() => setopenCourse(true)}
+                >
+                  Content
+                </div>
+
+                {openCourse ? (
+                  <div
+                    className="close-content"
+                    onClick={() => setopenCourse(false)}
+                  >
+                    <img src={CloseContentIcon} alt="Close Content Icon" />
+                  </div>
+                ) : null}
+              </React.Fragment>
+            ) : null}
 
             <div
-              className={`course-content `} //${openCourse ? "course-open" : ""}
+              className={`course-content ${openCourse ? "course-open" : ""}`}
             >
               <h2>Course Content</h2>
 
@@ -202,7 +216,7 @@ export default function Index(props) {
                     curriculum={course.curriculum}
                     changeVideo={changeVideo}
                     icon={DropDownSectionIcon}
-                    // setopenCourse={setopenCourse}
+                    setopenCourse={setopenCourse}
                   />
                 </div>
               ) : null}
