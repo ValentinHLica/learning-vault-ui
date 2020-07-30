@@ -25,7 +25,7 @@ import ForgotPassword from "./components/User/ForgotPassword";
 import ResetPassword from "./components/User/ResetPassword";
 
 export default function App() {
-  window.APIUrl = "https://learning-valut-api.herokuapp.com";
+  window.APIUrl = "https://portfolio-server-vl.herokuapp.com/vault";
   return (
     <Provider>
       <Router>
