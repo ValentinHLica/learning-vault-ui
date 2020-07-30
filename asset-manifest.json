@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/learning-vault-ui/static/css/main.1352f8ee.chunk.css",
-    "main.js": "/learning-vault-ui/static/js/main.fca9a364.chunk.js",
-    "main.js.map": "/learning-vault-ui/static/js/main.fca9a364.chunk.js.map",
+    "main.css": "/learning-vault-ui/static/css/main.3ba41ca1.chunk.css",
+    "main.js": "/learning-vault-ui/static/js/main.b9d3507d.chunk.js",
+    "main.js.map": "/learning-vault-ui/static/js/main.b9d3507d.chunk.js.map",
     "runtime-main.js": "/learning-vault-ui/static/js/runtime-main.7695d838.js",
     "runtime-main.js.map": "/learning-vault-ui/static/js/runtime-main.7695d838.js.map",
     "static/js/2.685ca66c.chunk.js": "/learning-vault-ui/static/js/2.685ca66c.chunk.js",
     "static/js/2.685ca66c.chunk.js.map": "/learning-vault-ui/static/js/2.685ca66c.chunk.js.map",
     "index.html": "/learning-vault-ui/index.html",
-    "precache-manifest.d29308a97a418fc35485faa1682cc2de.js": "/learning-vault-ui/precache-manifest.d29308a97a418fc35485faa1682cc2de.js",
+    "precache-manifest.e600fa64d2541b74b2159ca1baf3f7c3.js": "/learning-vault-ui/precache-manifest.e600fa64d2541b74b2159ca1baf3f7c3.js",
     "service-worker.js": "/learning-vault-ui/service-worker.js",
-    "static/css/main.1352f8ee.chunk.css.map": "/learning-vault-ui/static/css/main.1352f8ee.chunk.css.map",
+    "static/css/main.3ba41ca1.chunk.css.map": "/learning-vault-ui/static/css/main.3ba41ca1.chunk.css.map",
     "static/js/2.685ca66c.chunk.js.LICENSE.txt": "/learning-vault-ui/static/js/2.685ca66c.chunk.js.LICENSE.txt",
     "static/media/main.css": "/learning-vault-ui/static/media/SofiaProRegular.edbd56cb.ttf",
     "static/media/arrow-left.svg": "/learning-vault-ui/static/media/arrow-left.93b555fa.svg",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.7695d838.js",
     "static/js/2.685ca66c.chunk.js",
-    "static/css/main.1352f8ee.chunk.css",
-    "static/js/main.fca9a364.chunk.js"
+    "static/css/main.3ba41ca1.chunk.css",
+    "static/js/main.b9d3507d.chunk.js"
   ]
 }
